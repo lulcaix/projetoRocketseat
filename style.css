@@ -27,9 +27,10 @@ body {
   background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover
-    /* background: url(./assets/bg-mobile.jpg) no-repeat top center/cover
-  */;
+  background-size: cover;
+  height: 100vh;
+  /* background: url(./assets/bg-mobile.jpg) no-repeat top center/cover
+  */
 }
 
 body * {
@@ -146,4 +147,13 @@ ul li a:hover {
 
 #rocketseat {
   text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
